@@ -5,9 +5,12 @@ import App from './App.jsx'
 import Header from './Header.jsx'
 import Hero from './Hero.jsx'
 import Footer from './Footer.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+     <App />
+    </BrowserRouter>
   </StrictMode>,
 )
