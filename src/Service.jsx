@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "./Hero";
-import Footer from "./Footer";
 import Section from "./Section";
 import image1 from "./assets/image1.avif"
 import icon1 from "./assets/icon1.svg"
@@ -93,7 +92,7 @@ const Service = () => {
 </div>
 
 
-    <Footer/>
+    
 
         </div>
     )

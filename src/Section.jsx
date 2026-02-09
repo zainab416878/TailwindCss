@@ -3,7 +3,7 @@ import React from "react";
 const Section = ({image, icon, title, text, reverse}) => {
     return(
         <>
-        <div className={`px-30 gap-5 flex items-center justify-between bg-gray-100 ${reverse ? "flex-row-reverse" : "flex-row"}`}>
+        <div className={`px-30 gap-5 flex items-center justify-between bg-gray-100  flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""}`}>
 
             <div className="flex-[2]">
             <img src={image} alt=""></img>
@@ -14,7 +14,7 @@ const Section = ({image, icon, title, text, reverse}) => {
                 <img src={icon} alt="icon" className="w-20 h-20"></img>
                 <h2 className="text-3xl font-bold">{title}</h2>
             </div>
-            <p className="mt-2">{text}</p>
+            <p className="mt-2 mb-5 md:mb-none">{text}</p>
             </div>
         </div>
         </>
